@@ -319,8 +319,8 @@ Hint: `conda env create --quiet -f environment.yml && conda clean -a`
 
     FROM continuumio/anaconda3
 
-    #create the env    
-    COPY environment.yml . 
+    COPY hw_env.yml .
+    
     RUN apt-get update && apt-get -y install apt-utils=2.4.8 && \
       apt-get -y installed apt-transport-https=2.0.2ubuntu0.2 && \
       conda env create --file hw_env.yml && conda clean -a
