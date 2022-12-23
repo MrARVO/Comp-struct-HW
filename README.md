@@ -179,13 +179,14 @@ bgzip Homo_sapiens.GRCh38.99.sorted.gff3
 tabix -p gff Homo_sapiens.GRCh38.99.sorted.gff3.gz
 ```
 
-### 3. {#3}
+### 3.
 
-TF1: <https://www.encodeproject.org/files/ENCFF404ASR/> `<br>`{=html}
-TF2: <https://www.encodeproject.org/files/ENCFF699UTZ/> `<br>`{=html}
-TF3: <https://www.encodeproject.org/files/ENCFF507JZI/> `<br>`{=html}
-`<br>`{=html} ATAC: <https://www.encodeproject.org/files/ENCFF516KWQ/>
-`<br>`{=html}
+TF1: <https://www.encodeproject.org/files/ENCFF404ASR/> <br>
+TF2: <https://www.encodeproject.org/files/ENCFF699UTZ/> <br>
+TF3: <https://www.encodeproject.org/files/ENCFF507JZI/> <br>
+
+ATAC: <https://www.encodeproject.org/files/ENCFF516KWQ/> <br>
+
 
 ``` {.python}
 mkdir bed_files && cd bed_files
@@ -298,12 +299,11 @@ TCP/IP представляет собой набор протоколов, ре
 
 #### OSI
 
-Состоит из 7 уровней: `<br>`{=html}
-
+Состоит из 7 уровней:
 
 Physical layer: этот уровень связан с физической
 передачей данных между устройствами. Это про типы кабелей и сигналы,
-используемые для передачи данных. `<br>`{=html}
+используемые для передачи данных.
 
 Data link layer: отвечает за точную доставку данных между
 устройствами, которые подключены напрямую, например, между двумя
@@ -336,31 +336,19 @@ Application layer: самый высокий уровень модели OSI,
 
 представляет собой набор протоколов, которые используются для передачи
 данных через Интернет. Он основан на модели OSI и состоит из 4 уровней:
-`<br>`{=html}
 
-```{=html}
-<ins>
-```
-Network Interface layer:`</ins>`{=html} соответствует физическому уровню
+
+Network Interface layer: соответствует физическому уровню
 и уровню канала передачи данных модели OSI и отвечает за отправку и
 получение данных на физическом уровне.
 
-```{=html}
-<ins>
-```
-Internet layer:`</ins>`{=html} соответствует сетевому уровню модели OSI
+Internet layer:соответствует сетевому уровню модели OSI
 и отвечает за маршрутизацию данных между устройствами.
 
-```{=html}
-<ins>
-```
-Transport layer:`</ins>`{=html} соответствует транспортному уровню
+Transport layer:соответствует транспортному уровню
 модели OSI и отвечает за установление, поддержание и завершение
 соединений между устройствами.
 
-```{=html}
-<ins>
-```
-Application layer:`</ins>`{=html} соответствует сеансовому,
+Application layer: соответствует сеансовому,
 презентационному и прикладному уровням модели OSI и отвечает за
 предоставление услуг пользователю.
