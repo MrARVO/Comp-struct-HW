@@ -1,5 +1,5 @@
 
-# 1 - Dependencies management {#1---dependencies-management}
+# 1 - Dependencies management
 
 ***git branch name:*** dependencies
 
@@ -142,7 +142,7 @@ Conda более популярен для нужд разработчиков (
 
 
 
-## Problem \[6.5\] {#problem-65}
+## Problem \[6.5\]
 
 The problem itself is relatively simple.
 
@@ -291,7 +291,7 @@ picard - так как цель задания поработать с конд�
     # multic v1.13
     RUN pip install multiqc==1.13
 
-## Extra points \[1.5\] {#extra-points-15}
+## Extra points \[1.5\]
 
 You will be awarded extra points for the following:
 
