@@ -56,6 +56,8 @@ Docker разработан, чтобы быть легким и простым.
 
 -   нужно прям сидеть и разбираться
 
+
+
 -   \[0.5\] Explain how Docker works: what are Dockerfiles, how are
     containers created, and how are they run and destroyed?
 
@@ -210,25 +212,23 @@ conda уже установлена
 
 ### create a new virtual environment
 
-conda create -n hw_env python=3.10 \--no-default-packages
-conda activate hw_env
+conda create -n hw_env python=3.10 --no-default-packages <br>
+conda activate hw_env <br>
 
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
+conda config --add channels defaults <br>
+conda config --add channels bioconda <br>
+conda config --add channels conda-forge <br>
 
 ### install all necessary packages
+conda install -y fastqc=0.11.9 <br>
+conda install -y star=2.7.10b <br>
+conda install -y samtools=1.16.1 <br>
+conda install -y picard <br>
+conda install -y salmon=1.9.0 <br>
+conda install -y bedtools=2.30.0 <br>
+conda install -y multiqc=1.13 <br>
 
-conda install -y fastqc=0.11.9
-conda install -y star=2.7.10b
-conda install -y samtools=1.16.1
-conda install -y picard
-conda install -y salmon=1.9.0
-conda install -y bedtools=2.30.0
-conda install -y multiqc=1.13
-
-### You won\'t be able to install some tools - that\'s fine. List their names, and explain what should be done to make them conda-friendly (conda-forge channel, bioconda channel). {#you-wont-be-able-to-install-some-tools---thats-fine-list-their-names-and-explain-what-should-be-done-to-make-them-conda-friendly-conda-forge-channel-bioconda-channel}
-
+### You won't be able to install some tools - that's fine. List their names, and explain what should be done to make them conda-friendly (conda-forge channel, bioconda channel).
 picard - так как цель задания поработать с кондой, то я поставил его через нее, но там версия 2.27.4 вместо 2.27.5. Можно поставить руками нужную версию, но тогда она не попадет в conda env, так что я не стал. Если вдруг это надо было, то на их гитхабе лежит построчный код, как это поставить руками.
 
 Если какие-то другие пакеты не ставятся, то можно пробовать поменять канал вручную на bioconda.
@@ -312,7 +312,7 @@ Hint: `conda env create --quiet -f environment.yml && conda clean -a`
 
 #### Занимаемый объем
 
-До сжатия: 2.0 Gb
+До сжатия: 2.0 Gb <br>
 После сжатия: 1.3 Gb
 
 #### Docker для conda
