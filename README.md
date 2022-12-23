@@ -1,30 +1,9 @@
----
-jupyter:
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.10.4
-  nbformat: 4
-  nbformat_minor: 5
----
 
-::: {.cell .markdown}
 # 1 - Dependencies management {#1---dependencies-management}
 
 ***git branch name:*** dependencies
-:::
 
-::: {.cell .markdown}
+
 ## Theory \[2\]
 
 As usual, we will start with a few theoretical questions:
@@ -160,9 +139,9 @@ Conda более популярен для нужд разработчиков (
 локально в средах, которые не находятся в каталоге root/bin, например,
 пользователь может использовать разные версии python в каждой среде
 (conda или apt).
-:::
 
-::: {.cell .markdown}
+
+
 ## Problem \[6.5\] {#problem-65}
 
 The problem itself is relatively simple.
@@ -183,9 +162,8 @@ Here is the list of tools and their versions that are used in your work:
 -   [salmon](https://github.com/COMBINE-lab/salmon), commit tag 1.9.0
 -   [bedtools](https://github.com/arq5x/bedtools2), v2.30.0
 -   [multiqc](https://github.com/ewels/MultiQC), v1.13
-:::
 
-::: {.cell .markdown}
+
 **Anaconda**:
 
 -   \[1\] Install conda, create a new virtual environment, and install
@@ -222,9 +200,8 @@ Here is the list of tools and their versions that are used in your work:
     [labels](https://docs.docker.com/engine/reference/builder/#label),
     e.g. maintainer, version, etc.
     ([hint](https://medium.com/@chamilad/lets-make-your-docker-image-better-than-90-of-existing-ones-8b1e5de950d))
-:::
 
-::: {.cell .markdown}
+
 ## Anaconda:
 
 ### Install conda
@@ -313,9 +290,7 @@ picard - так как цель задания поработать с конд�
 
     # multic v1.13
     RUN pip install multiqc==1.13
-:::
 
-::: {.cell .markdown}
 ## Extra points \[1.5\] {#extra-points-15}
 
 You will be awarded extra points for the following:
@@ -336,9 +311,8 @@ You will be awarded extra points for the following:
 
 Hint: `conda env create --quiet -f environment.yml && conda clean -a`
 ([example](https://github.com/nf-core/clipseq/blob/master/Dockerfile))
-:::
 
-::: {.cell .markdown}
+
 #### Занимаемый объем
 
 До сжатия: 2.0 Gb `<br>`{=html} После сжатия: 1.3 Gb
@@ -352,4 +326,3 @@ Hint: `conda env create --quiet -f environment.yml && conda clean -a`
     RUN apt-get update && apt-get -y install apt-utils=2.4.8 && \
       apt-get -y installed apt-transport-https=2.0.2ubuntu0.2 && \
       conda env create --file hw_env.yml && conda clean -a
-:::
